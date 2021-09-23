@@ -8,7 +8,7 @@ console.log(myArgs[0].slice(0, 16) == "fs.writeFileSync")
 for (let i = 0; i < myArgs.length ; i++) {
     if (myArgs[i].slice(0,12) == "fs.writeFile")
     {
-        console.log("hritik")
+        console.log("Anshika");
         fs.writeFile("prog.txt", "created", err => {
             if (err) {
                 console.error(err)
