@@ -8,18 +8,17 @@ console.log(myArgs[0].slice(0, 16) == "fs.writeFileSync")
 for (let i = 0; i < myArgs.length ; i++) {
     if (myArgs[i].slice(0,12) == "fs.writeFile")
     {
-        console.log("Anshika");
+        console.log("AnshikaSh");
         fs.writeFile("prog.txt", "created", err => {
             if (err) {
                 console.error(err)
                 return
             }
-            //file written successfully
         })
     }
     else if (myArgs[i].slice(0, 11) == "fs.readFile")
     {
-        console.log("reading")
+        console.log("read it");
          fs.readFile('prog.txt', 'utf8', (err, data) => {
             if (err) {
                 console.error(err)
